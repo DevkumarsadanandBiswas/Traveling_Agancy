@@ -1,0 +1,172 @@
+/* Add a black background color to the top navigation */
+.topnav{
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover{
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active{
+background-color: #04AA6D;
+color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right{
+float: right;
+}
+
+/* container tag for top padding of slider*/
+.container{
+  padding:2rem 0rem 0rem 0rem;
+}
+
+/* To wrap the slider */
+.slider-wrapper{
+  position: relative;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/* all the aspect of slider */
+.slider{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%,0.25);
+}
+
+/* Image in the slider */
+.slider img{
+  flex:1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* for moving one image to another image nav is here*/
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index:1;
+}
+
+/* The link for images managed by here*/
+.slider-nav a{
+  width: 0.5rem;
+  height:0.5rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+/*for hover effect in link */
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+/* moving text styling is here*/
+.row-line{
+  background-color: #FCB853;
+  color: #FFFFFF; 
+  font-weight: bold; 
+  font-family: calibri; 
+  padding: 5px;
+}
+
+/* Text or paragraph in the website to be align proper with this */
+#AboutUs,#Services,p{
+  text-align:justify;
+}
+
+#ContactUs{
+  text-align:center;
+  background-color: #04AA6D
+}
+/* all the heading is handle by here*/
+h1,h2,h3,h4,h5{
+  text-align:center;
+  background-color: #04AA6D;
+}
+
+/* For changing the color of the heading */
+#AboutUs,h3{
+  background-color: white !important;
+}
+
+/* all photo are managed by here */
+.col-md-3{
+  border: 2px solid gray;
+  padding: 50px 2px 0px 40px;
+  border-radius: 5%;
+}
+
+/* form border is all about  */
+form{
+  padding-block: 40px;
+  border:1px solid black;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
+  background-color: rgb(143, 178, 206) !important;
+}
+
+/*the form label is managed here */
+form,label{
+  color:black ;
+  text-indent: 0%;
+  padding-right: 0%;
+}
+
+/* input boxes is managed here*/
+.name,.email,.number,.gender,.address,.pwd,.rpwd{
+  padding:1% 50% 1% 20%;
+}
+
+/* submit button is fixed */
+.btn{
+  padding: 3% 0% 0% 45%;
+}
+
+/* Managed subscribe text field here*/
+#ContactUs,label,input{
+  text-align:center;
+  padding:1% 35% 0% 35%;
+}
+
+/* location is managed here*/
+#ContactUs,#loc{
+  background-color: #d6e7e8; 
+}
+
+/* the footer is managed here*/
+#Footer{
+  color:#FFFFFF;
+  background-color: #161515;
+}
+
+/* The copyright is managed here*/
+#LowFooter{
+  color:#FFFFFF;
+  background-color: #333;
+}
